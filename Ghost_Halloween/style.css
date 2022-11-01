@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background-color: #191a2e;
+}
+
+.ghost {
+    width: 100px;
+    height: 120px;
+    background-color: #fff;
+    margin: 25px;
+    border-radius: 100rem 100rem 0 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: ghost 1s cubic-bezier(0.25
+    , 0.46, 0.45, 0.94) alternate infinite;
+}
+
+.ghost::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+    border-radius: 0 0 100rem 100rem;
+    background-color: #fff;
+    box-shadow: 20px 0 0 0 white,
+    40px 0 0 0 white,
+    60px 0 0 0 white, 80px 0 0 0 white;
+}
+.ghost::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 100rem;
+    position: absolute;
+    left: -10px;
+    box-shadow: 100px 0 0 0 white;
+}
+
+.ghost-body {
+    width: 100%;
+    max-width: 50%;
+    height: 50px;
+}
+.ghost-eye {
+    width: 20px;
+    height: 20px;
+    background-color: #191a2e;
+    border-radius: 100rem;
+    box-shadow: 30px 0 0 0 #191a2e;
+}
+
+.ghost-mouth {
+    width: 100%;
+    max-width: 80%;
+    margin: 10px auto 0;
+    background-color: #191a2e;
+    height: 20px;
+    border-radius: 0 0 100rem 100rem;
+    position: relative;
+}
+.ghost-mouth::before {
+    content: "";
+    position: absolute;
+    left: 30%;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+}
+@keyframes ghost {
+    to {
+        transform: translateY(30%);
+    }
+}

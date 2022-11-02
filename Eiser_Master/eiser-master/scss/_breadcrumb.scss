@@ -1,0 +1,158 @@
+/* Home Banner Area css
+============================================================================================ */
+
+.home_banner_area {
+    background: url(../img/banner/banner-bg.jpg) no-repeat center bottom;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    min-height: 790px;
+    @media (max-width: 767px) {
+        background-position: initial;
+    }
+    .banner_inner {
+        position: relative;
+        width: 100%;
+        min-height: 790px;
+        .banner_content {
+            .sub {
+                font-size: 14px;
+                font-weight: 500;
+                color: #ffffff;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-size: 52px;
+                font-family: $body-font;
+                font-weight: 700;
+                line-height: 60px;
+                margin-bottom: 15px;
+                color: #ffffff;
+                span {
+                    color: $primary-color;
+                }
+            }
+            h4 {
+                font-size: 18px;
+                font-family: $title-font;
+                font-weight: 300;
+                color: #ffffff;
+                margin-bottom: 0px;
+            }
+            .white_bg_btn {
+                margin-top: 45px;
+                line-height: 50px;
+                border-radius: 5px;
+                display: inline-block;
+                font-weight: 500;
+                font-size: 14px;
+                box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+            }
+            .halemet_img {
+                text-align: right;
+            }
+        }
+    }
+}
+
+.blog_banner {
+    min-height: 780px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 0px;
+    .banner_inner {
+        background: #04091e;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        z-index: 1;
+        .overlay {
+            background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+            opacity: 0.5;
+            height: 125%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            z-index: -1;
+        }
+        .blog_b_text {
+            max-width: 700px;
+            margin: auto;
+            color: #fff;
+            margin-top: 40px;
+            h2 {
+                font-size: 60px;
+                font-weight: 500;
+                font-family: $body-font;
+                line-height: 66px;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 35px;
+            }
+            .white_bg_btn {
+                line-height: 42px;
+                padding: 0px 45px;
+            }
+        }
+    }
+}
+
+.banner_area {
+    position: relative;
+    z-index: 1;
+    min-height: 200px;
+    .banner_inner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        min-height: 200px;
+        background: $offwhite;
+        z-index: 1;
+        .banner_content {
+            position: relative;
+            z-index: 10;
+            h2 {
+                font-size: 27px;
+                font-weight: 500;
+            }
+            p {
+                margin-bottom: 0px;
+                font-weight: 300;
+            }
+            .page_link {
+                a {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: $text-color;
+                    font-family: $body-font;
+                    margin-right: 18px;
+                    position: relative;
+                    &:before {
+                        content: "/";
+                        font-size: 14px;
+                        position: absolute;
+                        right: -14px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    &:last-child {
+                        margin-right: 0px;
+                        &:before {
+                            display: none;
+                        }
+                    }
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End Home Banner Area css
+============================================================================================ */

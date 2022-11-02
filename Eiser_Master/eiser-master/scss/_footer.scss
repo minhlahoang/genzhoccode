@@ -1,0 +1,109 @@
+/* =================================== */
+
+/*  Footer Styles
+/* =================================== */
+
+.footer-area {
+    background: #0d0d1f;
+    .single-footer-widget {
+        @media(max-width: 991px) {
+            margin-bottom:30px;
+        }
+        h4 {
+            color: #ffffff;
+            margin-bottom: 35px;
+            @media(max-width: 1024px) {
+                font-size: 18px;
+            }
+            @media(max-width: 991px) {
+                margin-bottom: 15px;
+            }
+        }
+        ul {
+            padding-left: 0px;
+            li {
+                margin-bottom: 15px;
+                list-style: none;
+                a {
+                    @include transition();
+                    color: $text-color;
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .form-wrap {
+            margin-top: 25px;
+        }
+        input {
+            height: 50px;
+            border: none;
+            width: 70% !important;
+            font-weight: 300;
+            background: rgba(#ffffff, .15);
+            color: #ffffff;
+            padding-left: 20px;
+            border-radius: 0;
+            font-size: 14px;
+            padding: 10px;
+            &:focus {
+                outline: none;
+            }
+        }
+        .click-btn {
+            font-size: 12px;
+            text-transform: uppercase;
+            background: $primary-color;
+            color: #ffffff;
+            border-radius: 0;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            padding: 8px 12px;
+            border: 0;
+            position: relative;
+            left: -12%;
+            @include transition();
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+    .footer-bottom {
+        margin-top: 50px;
+        @media(max-width: 991px) {
+            margin-top: 20px;
+        }
+        p {
+            color: #ffffff;
+        }
+        a,
+        span {
+            color: $primary-color;
+        }
+        span {
+            font-weight: 700;
+        }
+        .footer-social {
+            text-align: center;
+            @media(max-width: 991px) {
+                text-align:left;
+                margin-top: 30px;
+            }
+            a {
+                background: rgba(#ffffff, .15);
+                margin-left: 5px;
+                width: 40px;
+                color: #ffffff;
+                display: inline-grid;
+                text-align: center;
+                height: 40px;
+                align-content: center;
+                @include transition();
+                &:hover {
+                    background: $primary-color;
+                }
+            }
+        }
+    }
+}

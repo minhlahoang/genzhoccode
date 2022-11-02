@@ -1,0 +1,36 @@
+/* Home Banner Area css
+============================================================================================ */
+
+.offer_area {
+    background: url(../img/offer-bg.png) no-repeat center;
+    background-size: cover;
+    @media (max-width: 991px) {
+        background: $offwhite;
+    }
+}
+
+.offer_content {
+    padding: 132px 0px;
+    @media (max-width: 991px) {
+        padding: 100px 0px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 300;
+        color: #4a4a4a;
+    }
+    h2 {
+        font-size: 100px;
+        line-height: 80px;
+        color: $title-color;
+        margin-bottom: 0px;
+        font-weight: 700;
+        @media (max-width: 767px) {
+            font-size: 60px;
+            line-height: 60px;
+        }
+    }
+    p {
+        margin-bottom: 0px;
+    }
+}

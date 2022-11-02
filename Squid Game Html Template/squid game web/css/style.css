@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI' , sans-serif;
+}
+
+body{
+    background-image:url(../img/main-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 20px 60px;
+}
+header .brand-name{
+    width: 10%;
+    cursor: pointer;
+}
+.menu , .logo{
+    cursor: pointer;
+}
+.menu:hover{
+    width: 1.5rem;
+}
+
+/* main content */
+.main-content{
+    display: flex;
+    align-items: center;
+}
+#netflix , #logo{
+    position: absolute;
+}
+#netflix{
+    top: 3%;
+    left: 7%;
+    width: 8%;
+}
+#logo{
+    top: 3%;
+    left: 45%;
+    width: 8%;
+}
+.main-content-img{
+    width: 75%;
+    margin-bottom: 9px;
+}
+.left-content{
+    margin: 3em 0 0 6em;
+    position: relative;
+}
+.left-content p{
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* buttons section */
+.shop-now{
+    background:url(../img/shop-btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 9px 0 9px 36px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+/* two box */
+.two-box{
+    display: flex;
+    margin-top: 3em;
+}
+.two-box .weapon-box{
+    background:url(../img/weapon.png);
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.two-box .weapon-box img{
+    width: 110%;
+    position: relative;
+    left: -25%;
+    top: -20%;
+}
+
+.two-box .guard-box{
+    background:url(../img/the-guard.png);
+    background-size: 80% 60%;
+    background-repeat: no-repeat;
+}
+.two-box .guard-box img{
+    position: relative;
+    top: -2%;
+    right: 7%;
+}
+.box-text{
+    font-size: 8px;
+    margin: 5px 13px;
+}
+.social-media-icon img{
+    position: absolute;
+    top: 40%;
+    left: 95%;
+}
+.top-notch{
+    position: absolute;
+    top: 85%;
+    /* left: -5%; */
+    right: 40.2%;
+}
+.top-notch h5{
+    text-align: center;
+    position: relative;
+    right: 0.5em;
+    margin-bottom: 5px;
+    color: rgb(19, 110, 110);
+}
+.top-notch img{
+    width:  80%;
+}

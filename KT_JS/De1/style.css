@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.main {
+    display: flex;
+}
+
+.main .menu {
+    width: 20%;
+}
+
+.main .menu li {
+    background-color: rgb(172, 35, 49);
+    list-style: none;
+    padding: 10px 0;
+    position: relative;
+}
+
+.main .menu li a{
+    text-decoration: none;
+    color: white;
+    font-style: 18px;
+    font-weight: bold;
+}
+.main .menu li:hover {
+    background-color: red;
+}
+.main .menu li:hover > a {
+    color: yellow;
+}
+
+.menu:hover .con {
+    display: block;
+}
+
+.con {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 200px;
+    display: none;
+    margin-left: 1px;
+}
+
+.section {
+    width: 80%;
+    height: 100%;
+    margin: 10px 10% 0 ;
+    border-radius: 8px;
+    background: blue;
+    color: white;
+}
+
+.section form {
+    width: 70%;
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section form table {
+    width: 100%;
+    padding: 8px;
+}
+
+.section form table th.left {
+    width: 30%;
+    text-align: right;
+    padding: 10px;
+}
+
+.main .section form table th.right {
+    width: 70%;
+}
+
+.main .section form table th.right input {
+    width: 100%;
+    padding: 4px 0;
+}
+
+.main .section form table th.gender {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main .section .btn {
+    padding: 5px;
+    cursor: pointer;
+}

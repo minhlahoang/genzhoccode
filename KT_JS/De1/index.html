@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <p>BÀI KIỂM TRA SỐ 2</p>
+    </header>
+    <div class="main">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Lập trình Java</a></li>
+                <li class="cha"><a href="#">Thiết kế web</a>
+                    <ul class="con">
+                        <li><a href="#">Tài liệu HTML</a></li>
+                        <li><a href="#">Tài liệu CSS</a></li>
+                        <li><a href="#">Tài liệu Js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Lập trình C#</a></li>
+                <li><a href="#">Lập trình Web</a></li>
+                <li><a href="#">Lập trình hướng đối tượng</a></li>
+                <li><a href="#">Cơ sở dữ liệu</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <form action="">
+                <table border="0">
+                    <tr>
+                        <th class="left">Họ và tên: </th>
+                        <th class="right"><input type="text" placeholder="Họ tên" id="name"></th>
+                    </tr>
+                    <tr>
+                        <th class="left">Địa chỉ: </th>
+                        <th class="right"><input type="text" placeholder="Địa chỉ" id="address"></th>
+                    </tr>
+                    <tr>
+                        <th class="left">Giới tính: </th>
+                        <th class="right gender">
+                            <label for="">Nam</label> <input type="radio" name="gender_select">
+                            <label for="">Nữ</label> <input type="radio" name="gender_select">
+                            <label for="">Khác</label> <input type="radio" name="gender_select" id="" checked="checked">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="left">Sở thích: </th>
+                        <th class="right gender">
+                            <label for="">Sữa</label> <input type="checkbox" name="hobby" id="">
+                            <label for="">Chè bưởi</label> <input type="checkbox" name="hobby">
+                            <label for="">Phở</label> <input type="checkbox" name="hobby" value="lua-chon-2">
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="button" class="btn" onclick="myFunction()">Kiểm tra</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>BÀI KIỂM TRA SỐ 2</p>
+    </footer>
+</body>
+</html>

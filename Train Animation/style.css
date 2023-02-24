@@ -1,0 +1,272 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.trainAnimation {
+    position: relative;
+}
+
+.content {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #164668;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.building {
+    position: relative;
+    background-color: rgb(5, 51, 83);
+    width: 80px;
+    height: 300px;
+    left: 0;
+    top: 150px;
+    box-shadow: 80px 40px rgba(5, 51, 83), 120px -30px rgba(5, 51, 83), 150px 20px rgba(5, 51, 83), 190px -10px rgba(5, 51, 83, 0.5), 30px -10px rgba(5, 51, 83,0.5), 220px 70px rgba(5, 51, 83), 280px -25px rgba(5, 51, 83, 0.5), 360px 20px rgba(5, 51, 83,0.5),270px 30px rgba(5, 51, 83), 320px 70px rgba(5, 51, 83);
+}
+
+.building::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 15px;
+    background-color: rgb(252, 163, 17);
+    left: 13px;
+    top: 10px;
+    box-shadow: 23px 0px rgb(252,163,17,0.7), 47px 0px rgb(252,163,17,0.2), 0px 30px rgb(252,163,17,0.2), 23px 30px rgb(252,163,17,0.2), 47px 30px rgb(252,163,17), 120px -30px rgb(252,163,17,0.6), 140px -30px rgb(252,163,17), 160px -30px rgb(252,163,17,0.2),120px 0px rgb(252,163,17,0.2),140px 0px rgb(252,163,17,0.2), 160px 0px rgb(252,163,17,0.2), 270px 30px rgb(252,163,17,0.2), 290px 30px rgb(252,163,17,0.2),310px 30px rgb(252,163,17,0.5);
+}
+
+.building::after {
+    content: "";
+    position: absolute;
+    background-color: #041c2d;
+    width: 100px;
+    height: 250px;
+    top: 90px;
+    box-shadow: 100px 30px #041c2d, 150px -10px #041c2d, 230px 50px #041c2d, 300px -20px #041c2d;
+}
+
+.windows {
+    position: absolute;
+    background-color: rgb(252, 163, 17);
+    width: 20px;
+    height: 25px;
+    left: 310px;
+    top: 230px;
+    box-shadow: 30px 0 rgb(252,163,17), 60px 0 rgb(252,163,170,0.3),30px 40px rgb(252,163,170,0.3), 60px 40px rgb(252,163,17), -140px 20px rgb(252,163,17), -100px 20px rgb(252,163,17,0.3), -100px 60px rgb(252,163,17),-250px 30px rgb(252,163,17,0.8),-250px 70px rgb(252,163,17,0.2),-290px 30px rgb(252,163,17,0.2);
+}
+
+.windows::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(252,163,17,0.1);
+    width: 25px;
+    height: 7px;
+    left: -73px;
+    top: -80px;
+    box-shadow: 50px 15px rgb(252,163,17,0.1), 125px 40px rgb(252,163,17,0.1), 125px 55px rgb(252,163,17,0.1);
+}
+
+.windows::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(252, 163, 17);
+    width: 15px;
+    height: 20px;
+    top: -50px;
+    left: -102px;
+    box-shadow: -115px 20px rgb(252,163,17), 47px 50px rgb(252,163,17);
+    animation: flash 4s ease infinite alternate;
+}
+
+.bridge {
+    position: absolute;
+    z-index: 4;
+    width: 400px;
+    height: 5px;
+    top: 280px;
+    border-bottom: 5px solid #333;
+    border-top: 2px solid #333;
+}
+
+.bridge::after, .bridge::before {
+    content: "";
+    position: absolute;
+    background-color: #333;
+}
+
+.bridge::before {
+    width: 2px;
+    height: 5px;
+    left: 60px;
+    box-shadow:110px 0px #333,160px 0px #333,270px 0px #333,320px 0px #333;
+}
+
+.bridge::after {
+    width: 15px;
+    height: 150px;
+    left: 110px;
+    box-shadow:160px 0px #333;
+}
+
+.train {
+    position: absolute;
+    z-index: 3;
+    animation: move 6s linear infinite;
+}
+
+.carOne {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #9e2a2b;
+    left: 220px;
+    top: -50px;
+    border-radius: 0 30px 0 0;
+    overflow: hidden;
+    box-shadow: inset 0 -5px #540b0e;
+}
+
+.carOne::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background-color: #540b0e;
+    top: 5px;
+    left: 60px;
+}
+
+.carOne::after {
+    content: "";
+    position: absolute;
+    background-color: #540b0e;
+    width: 40px;
+    height: 7px;
+    left: 10px;
+    top: 10px;
+}
+
+.carTwo {
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    background-color: #9e2a2b;
+    left: 125px;
+    top: -50px;
+    box-shadow: inset 0 -5px #540b0e;
+}
+
+.carTwo::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 7px;
+    background-color: #540b0e;
+    top: 10px;
+    left: 10px;
+    box-shadow: 40px 0 #540b0e;
+}
+
+.carTwo::after {
+    content: "";
+    position: absolute;
+    background-color: #210405;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 30px;
+    left: 180px;
+    box-shadow:-20px 0 #210405,-40px 0 #210405,-60px 0 #210405,-80px 0 #210405,-100px 0 #210405,-120px 0 #210405,-140px 0 #210405,-160px 0 #210405,-180px 0 #210405,-200px 0 #210405,-220px 0 #210405,-240px 0 #210405,-260px 0 #210405,-280px 0 #210405;
+}
+
+.carThree {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #9e2a2b;
+    border-radius: 30px 0 0 0;
+    overflow: hidden;
+    box-shadow: inset 0 -5px #540b0e;
+    left: 20px;
+    top: -50px;
+}
+
+.carThree::before, .carThree::after {
+    content:"";
+  position: absolute;
+  background-color: #540b0e;
+}
+
+.carThree::before {
+    width: 40px;
+    height: 15px;
+    top: 5px;
+}
+
+.carThree::after {
+    width: 40px;
+    height: 7px;
+    top: 10px;
+    left: 50px;
+}
+
+.moon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 5px 5px rgb(234, 226, 183) ;
+    top: 60px;
+    left: 200px;
+}
+
+.moon:before {
+    content:"";
+    position: absolute;
+    background-color: rgb(234, 226, 183,0.2);
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+  }
+  
+  .moon:after {
+    content:"";
+    position: absolute;
+    background-color: rgb(234, 226, 183,0.1);
+    border-radius: 50%;
+    top:-5px;
+    left:-5px;
+    width:50px;
+    height:50px;
+  }
+
+  .stars {
+    position: absolute;
+    background-color: #fff;
+    height:1px;
+    width:1px;
+    top:70px;
+    left:150px;
+    box-shadow: -70px 30px #fff,-40px -10px #fff,-20px -20px #fff, 34px -10px #fff,50px -30px #fff, -30px 23px #fff, 95px -10px #fff, 120px -15px #fff, 140px 20px #fff, 155px 30px #fff;
+  }
+
+  @keyframes move {
+        from {
+            left: -170px;
+        } to {
+            left: 100%;
+        }
+  }
+
+  @keyframes flash {
+    from {
+        opacity: 0.6;
+    } to {
+        opacity: 0.1;
+    }
+    
+  }

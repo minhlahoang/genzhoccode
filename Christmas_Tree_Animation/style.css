@@ -1,0 +1,317 @@
+body{
+    background: #FFF;
+   }
+   .container {
+     position: absolute;
+     left: 300px;
+     top: 50px;
+   }
+   
+   .socks {
+     position: absolute;
+     top: 80px; left: 10px;
+     z-index: 1;
+     transform: rotate(10deg);
+   }
+   
+   .socks.two {
+     position: absolute;
+     top: 143px; left: -40px;
+     z-index: 1;
+     transform: rotate(-10deg);
+   }
+   
+   .socks:hover {
+     animation: 1.9s deco  linear infinite;
+   }
+   
+   .top {
+     position: absolute;
+     width: 15px;
+     height: 35px;
+     background: #E54B4B;
+     border-radius: 5px;
+   }
+   
+   .foot {
+     position: absolute;
+     top: 20px; left: 0;
+     width: 25px;
+     height: 15px;
+     border-radius: 30px;
+     background: #E54B4B;
+   }
+   
+   
+   .foot.two {
+     position: absolute;
+     top: 20px; left: -10px;
+     width: 25px;
+     height: 15px;
+     border-radius: 30px;
+     background: #E54B4B;
+   }
+   
+   .tree {
+     position: absolute;
+   }
+   
+   .base {
+     width: 210px;
+     height: 10px;
+     background: #CCC;
+     position: absolute;
+     top: 304px; left: -45px;
+     border-radius: 100%;
+   }
+   
+   .base:after {
+     content: '';
+     width: 20px;
+     height: 20px;
+     background: #84714F;
+     position: absolute;
+     top: -25px; left: 83px;
+   }
+   
+   .layer {
+     position: absolute;
+     width: 0;
+     height: 0;
+     border-left: 50px solid transparent;
+     border-right: 50px solid transparent;
+     border-bottom: 100px solid #499F68;
+   }
+   
+   .layer.two{
+     position: absolute;
+     top: 30px; left: -10px;
+     border-left: 60px solid transparent;
+     border-right: 60px solid transparent;
+     border-bottom: 120px solid #499F68;
+   }
+   
+   .layer.three{
+     position: absolute;
+     top: 50px; left: -30px;
+     border-left: 80px solid transparent;
+     border-right: 80px solid transparent;
+     border-bottom: 160px solid #499F68;
+   }
+   
+   .layer.four{
+     position: absolute;
+     top: 80px; left: -50px;
+     border-left: 100px solid transparent;
+     border-right: 100px solid transparent;
+     border-bottom: 200px solid #499F68;
+   }
+    
+   
+   .bauble {
+     z-index: 1;
+     position: absolute;
+     border-radius: 100%;
+   }
+   
+   .bauble.one { 
+     top: 65px;
+     width: 13px;
+     height: 13px;
+     background: #FFE066;
+   } 
+   
+   .bauble.two { 
+     top: 105px; left: -30px;
+     width: 13px;
+     height: 13px;
+     background: #FFE066;
+   } 
+   
+   .bauble.three { 
+     top: 110px; left: 15px;
+     width: 13px;
+     height: 13px;
+     background: #FFE066;
+   } 
+   
+   .bauble.four { 
+     top: 163px; left: -30px;
+     width: 13px;
+     height: 13px;
+     background: #FFE066;
+   } 
+   
+   .deco {
+     position: absolute;
+     top: 130px; left: 30px;
+     width: 50px;
+     height: 20px;
+     background: #EF476F;
+   /*   border-radius: 100% 100% 100% 100%; */
+     transform: rotate(0deg);
+   }
+   
+   .deco:after {
+   
+   }
+   
+   .line {
+     z-index: 1;
+     position: absolute;
+     top: 70px; left: -43px;
+     width: 70px;
+     height: 0;
+     background: #FFE066;
+     border: 1px dashed #FFF;
+     transform: rotate(-30deg);
+   }
+   
+   .line.two {
+     top: 93px; left: -50px;
+     width: 85px;
+     height: 0;
+     background: #FFE066;
+     border: 1px dashed #FFF;
+     transform: rotate(-30deg);
+   }
+   
+   .line.three {
+     top: 123px; left: -60px;
+     width: 106px;
+     height: 0;
+     background: #FFE066;
+     border: 1px dashed #FFF;
+     transform: rotate(-30deg);
+   }
+   
+   .line.four {
+     top: 153px; left: -80px;
+     width: 136px;
+     height: 0;
+     background: #FFE066;
+     border: 1px dashed #FFF;
+     transform: rotate(-30deg);
+   }
+   
+   .pressie {
+     z-index: 1;
+     position: absolute;
+     top: 250px;  left: 120px;
+     width: 60px;
+     height: 60px;
+     background: #F45B69;
+   }
+   
+   .cover {
+     position: absolute;
+     left: -3px;
+     width: 66px;
+     height: 10px;
+     background: #F45B69;
+     border-bottom: 1px solid #AAA;
+   }
+   .wrap {
+     position: absolute;
+     left: 25px;
+     background: #59C3C3;
+     width: 10px;
+     height: 60px;
+   }
+   
+   .ribbon {
+     position: absolute;
+     top: -30px; left: 10px;
+     background: #FFF;
+     width: 12px;
+     height: 25px;
+     border-radius: 0 80% 20% 80%;
+     border: 3px solid #59C3C3;
+     transform: rotate(-10deg);
+   }
+   
+   .ribbon:after {
+     position: absolute;
+     top: 0; left: 20px;
+     background: #FFF;
+     width: 12px;
+     height: 25px;
+     border-radius: 0 80% 20% 80%;
+     border: 3px solid #59C3C3;
+     transform: rotate(60deg);
+     content: '';
+   }
+   
+   .pressie:hover {
+     animation: 0.5s move linear infinite;
+   }
+   
+   @keyframes move {
+     0% { transform: rotate(10deg)}
+     50%{transform: rotate(-30deg)}
+     100%{transform: rotate(10deg)}
+   }
+   
+   @keyframes deco {
+     0% { transform: rotate(5deg)}
+     50%{transform: rotate(-10deg)}
+     100%{transform: rotate(5deg)}
+   }
+   
+   .light {
+     box-shadow: 1px 1px 10px #CCC,
+                  -2px 1px 10px #CCC,
+                      0 -1px 10px #CCC
+   }
+   
+   .star {
+      z-index: 1;
+      position: absolute;
+      left: -49px; top: -40px;
+      display: block;
+      color: red;
+      width: 0px;
+      height: 0px;
+      border-right:  100px solid transparent;
+      border-bottom: 70px  solid #FFE066;
+      border-left:   100px solid transparent;
+      transform: rotate(35deg) scale(.2);
+   }
+   .star:before {
+      border-bottom: 80px solid #FFE066;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+   
+   }
+   .star:after {
+      position: absolute;
+      display: block;
+      color: red;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid #FFE066;
+      border-left: 100px solid transparent;
+      transform:rotate(-70deg);
+      content: '';
+   }
+   
+   .star.two {
+     transform: rotate(23deg) scale(.1);
+     position: absolute;
+     top: 102px; left: -60px;
+   }
+   
+   .star-light {
+     
+   }
